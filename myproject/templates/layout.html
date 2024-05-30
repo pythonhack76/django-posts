@@ -17,14 +17,14 @@
     <nav>
         <a href="/">🏠</a> |
         <a href="/about">😊</a> |
-        <a href="/posts">📰</a> |
+        <a href="{% url 'posts:list' %}">📰</a> |
         <a href="/contacts">📇</a> |
         <a href="/faq">❓</a> |
-
+    </nav>
         <main>
             {%block content %}
             {% endblock %}
         </main>
-    </nav>
+
 </body>
 </html>
