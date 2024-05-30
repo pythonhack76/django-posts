@@ -15,14 +15,15 @@
 </head>
 <body>
     <nav>
-        <a href="/">🏠</a> |
+        <a href="/">
+            <span role="img" aria-label="Home">🏠</a> </span> |
         <a href="/about">😊</a> |
         <a href="{% url 'posts:list' %}">📰</a> |
         <a href="/contacts">📇</a> |
         <a href="/faq">❓</a> |
     </nav>
         <main>
-            {%block content %}
+            {% block content %}
             {% endblock %}
         </main>
 
