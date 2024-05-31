@@ -11,15 +11,18 @@
 
     </title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+     <!-- Bootstrap CSS -->
+     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <script src="{% static 'js/main.js' %}" defer></script>
 </head>
 <body>
     <nav>
         <a href="/">
-            <span role="img" aria-label="Home">🏠</a> </span> |
+            <span role="img" aria-label="Home" title="Home">🏠</a> </span> |
         <a href="/about">😊</a> |
-        <a href="{% url 'posts:list' %}">📰</a> |
-        <a href="/contacts">📇</a> |
+        <a href="{% url 'posts:list' %}">   <span role="img" aria-label="Posts">📰 </span></a> |
+        <a href="{% url 'users:register' %}">   <span role="img" aria-label="User Registration">🚀 </span></a> |
+        <a href="/contacts">🚀</a> |
         <a href="/faq">❓</a> |
     </nav>
         <main>

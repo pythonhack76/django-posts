@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Registrazione di un nuovo utente 
+
+  
+{% endblock %}
+
+{% block content %}
+   <h2>Registrazione di un nuovo Utente</h2>
+   <form class="form-with-validation" action="/users/register/" method="post">
+     {% csrf_token %}
+    {{ form }}
+    <button class="form-submit"> Submit </button>
+   </form>
+
+        {% endblock %}
+

@@ -27,6 +27,7 @@ main {
 }
 
 h1,
+h2,
 p {
     text-align: center;
 }
@@ -34,6 +35,7 @@ p {
 a {
     text-decoration: none;
     color: #81dbb8;
+   
 }
 
 a:hover {
@@ -46,4 +48,5 @@ a:hover {
     display: block; 
     width: 100%;
     max-width: 600px; 
-}
+
+    }
